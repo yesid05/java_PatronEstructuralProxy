@@ -6,6 +6,9 @@
 
 package patronproxy;
 
+import modelo.proxy.ProxyImagen;
+
+
 /**
  *
  * @author yesid caicedo
@@ -16,7 +19,10 @@ public class PatronProxy {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        ProxyImagen pi = new ProxyImagen();
+        pi.cargar();
+        pi.dibujar();
+        pi.guardar();
     }
     
 }
